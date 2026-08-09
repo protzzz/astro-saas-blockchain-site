@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-zinc-900 text-zinc-300 font-body;
+  }
+}
