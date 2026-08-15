@@ -1,3 +1,4 @@
+import { Circle } from '@components/circle';
 import { CutCornerButton } from '@components/cut_corner_button';
 import { Hexagon } from '@components/hexagon';
 
@@ -22,6 +23,24 @@ export const HeroSection = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Hexagon className="size-275" />
             </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Hexagon className="size-450" />
+            </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute -top-[900px] left-[200px]">
+                <img src="/assets/images/cube.png" alt="Cube 3D image" className="size-35" />
+              </Circle>
+            </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute top-[270px] left-[200px]">
+                <img src="/assets/images/cuboid.png" alt="Cuboid 3D image" className="size-35" />
+              </Circle>
+            </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute -top-[80px] -left-[600px]">
+                <img src="/assets/images/torus.png" alt="Torus 3D image" className="size-35" />
+              </Circle>
+            </div>
             <img
               src="/assets/images/icosahedron.png"
               alt=""
@@ -33,6 +52,14 @@ export const HeroSection = () => {
               className="w-125"
             />
           </div>
+        </div>
+        <div className="mt-40 flex flex-col items-center justify-center gap-4 md:mt-80">
+          <div className="inline-flex h-10 w-5 justify-center rounded-full pt-2 outline-6 outline-fuchsia-500/10">
+            <div className="h-[12px] w-[4px] rounded-full bg-fuchsia-500"></div>
+          </div>
+          <p className="font-extrabold tracking-wider text-zinc-500 uppercase">
+            Scroll to learn more
+          </p>
         </div>
       </div>
     </section>
